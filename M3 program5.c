@@ -1,5 +1,7 @@
 #include<stdio.h>    
 void main(){
+
+    printf("**Fibonacci series**\n");
     
  int a=0,b=1,c,i,number;
  
