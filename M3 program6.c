@@ -2,6 +2,7 @@
 
 void main(){
 
+printf("** Reverse order ** \n");
     int number,r,sum=0,i;
 
     printf("Enter a number :");
