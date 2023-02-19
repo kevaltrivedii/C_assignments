@@ -1,3 +1,4 @@
+///summation of digits///
 #include<stdio.h>
 
 void main(){
