@@ -1,3 +1,4 @@
+//concatenate string//
 #include <stdio.h>
 #include <string.h>
 
