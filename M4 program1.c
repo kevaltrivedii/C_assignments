@@ -1,4 +1,4 @@
-
+//read data from files//
 #include<stdio.h>
 int main(){
 
