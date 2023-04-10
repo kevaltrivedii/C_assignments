@@ -1,25 +1,22 @@
+// Module 4 Q-1 Write a program to read data from file.
+
 //read data from files//
 #include<stdio.h>
 int main(){
+     FILE *fp;
+     char buffer [50];
 
-    char file_name[100],c;
-    FILE* fp;
+     fp=fopen("read_file.txt","w");//opened file
+     fprintf(fp,"Hello there!!");//something to write in file 
 
-    printf("Enter name of a file you want to read : ");
-    scanf("%s",file_name);
+     fclose(fp);//file closed
 
-    fp=fopen(file_name,"r");
-
-    if(fp==NULL){
-        printf("cannot open file.\n");
-        return 1;
-
-    }while((c=fgetc(fp))!=EOF){
-        printf("%c",c);
-
-    }
-    fclose(fp);
+     fp=fopen("read_file.txt","r");//reopen file to read
+     while(fgets(buffer,50,fp)){//while loop for reading data from the given file
+        printf("%s",buffer);
+     }
+     fclose(fp);
 
 
-    
+
 }
